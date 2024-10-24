@@ -1,0 +1,76 @@
+
+<div  class="parents">
+<div class="parent">
+        <div class="parent0"> 
+          <div class="child0">
+              <div class="search">
+                 <svg style="width: 14.39px;" xmlns="http://www.w3.org/2000/svg" viewBox="5 5 14 14"><path fill="currentColor" d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754z"></path></svg>
+   
+                  <input class="input1"  [(ngModel)]="user.search"  type="text" placeholder="Price"> 
+                  
+                  <input type="text" class="go" (click)="seeinfo1()" placeholder="Search...">
+              </div>
+          </div>
+          <div class="child01">
+             <div  class="svg1">
+                    <svg style="width: 30px;" data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><g><path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"></path></g></svg>
+                     <button class="button1"> Log in</button>
+                </div>
+             <!-- <div  (click)="seecard()" class="svg2">
+
+           <svg   style="width: 30px;" style="height: 25px;" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 197.7 166" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-2"><path d="M197.9 55.9L169.9 127.4 64.5 127.4 27.6 29.8 0 29.8 0.2 16.7 36.5 16.7 73.4 114.3 160.9 114.3 183 55.9"></path><circle cx="143.8" cy="153" r="13"></circle><circle cx="90.8" cy="153" r="13"></circle><text data-hook="items-count" class="uxskpx M846Y_" text-anchor="middle" x="116" y="35" dy=".48em">5</text></svg>   
+             </div> -->
+          </div>
+        </div>
+        <div class="parent1">  
+          <div class="child10">
+              <div class="child100">CERAMIC-STUDIO</div>
+            </div>
+            <div class="icon2" ><i (click)='seebar()' class="fa-solid fa-bars"></i>
+              <div class="bar" *ngIf='logic2'>
+                <div class="log">
+                  <div class="login"><svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><g><path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"></path></g></svg>
+                  <p>Log in</p></div>
+                  <i (click)='closebar()' style="font-size: 35px; padding-top: 10px;" class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="liteg1">
+                  <div class="liteg">
+                    <ul class="li">
+                    <a (click)='closebar()' routerLink="/" class="li" href="">Home</a>
+                    <a (click)='closebar()'  routerLink='/shop' class="li">shop</a>
+                    <a  (click)='closebar()' routerLink='/giftcard' class="li">giftcard</a>
+                  
+                  </ul>
+                  </div>
+                  
+                      <div class="icons">
+  
+                          <svg _ngcontent-ng-c3221207567="" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 197.7 166" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-2" style="height: 25px;"><path _ngcontent-ng-c3221207567="" d="M197.9 55.9L169.9 127.4 64.5 127.4 27.6 29.8 0 29.8 0.2 16.7 36.5 16.7 73.4 114.3 160.9 114.3 183 55.9"></path><circle _ngcontent-ng-c3221207567="" cx="143.8" cy="153" r="13"></circle><circle _ngcontent-ng-c3221207567="" cx="90.8" cy="153" r="13"></circle><text _ngcontent-ng-c3221207567="" data-hook="items-count" text-anchor="middle" x="116" y="35" dy=".48em" class="uxskpx M846Y_">5</text></svg>
+                        <br>
+                          <a class="ai" href="https://www.facebook.com/wix" target='blank'> <i class="fa-brands fa-facebook"></i></a><br>
+                      <a class="ai" href="https://www.instagram.com/wix/" target='blank'><i class="fa-brands fa-instagram" ></i></a><br>
+                      <a class="ai" href="https://www.pinterest.com/wixcom/" target='blank'><i class="fa-brands fa-twitter"></i></a></div>
+                 
+                </div>
+              </div>
+            </div>
+             <!-- <app-card *ngIf='I' style="position: fixed" ></app-card>   -->
+          <div class="child11">
+              <ul>
+                  <li>
+                      <a routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+                  </li>
+                  <li>
+                        <a routerLink="/shop"  routerLinkActive="active">Shop</a>
+                  </li>
+                  <li>
+                        <a routerLink="/giftcard"  routerLinkActive="active">Gift Card</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+ </div>
+
+ 
+</div>
+

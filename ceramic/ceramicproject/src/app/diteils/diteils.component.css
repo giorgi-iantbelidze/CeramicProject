@@ -1,0 +1,131 @@
+
+.parent{
+    height: 1030px;
+    width: 1865px;
+    background: #F2F1F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parent0{
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    }
+    .parent01{
+        width: 150px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .child{
+        display: flex;
+        padding-top: 40px;
+        gap: 40px;
+    }
+    .child1,.child2{
+        padding-top: 120px;
+    }
+    .buttons{
+        display: flex;
+        gap: 10px;
+    }
+    .addtocard{
+        width: 200px;
+        height: 50px;
+        border: 1px solid gray;
+    }
+    .svg{
+        border: 1px solid gray; 
+        width: 50px;
+    }
+    .buynow{
+        width: 260px;
+        height: 50px;
+        color: white;
+        background: black;
+    }
+    .btn{
+        border: none;
+        background: #F2F1F0;
+    }
+    .i12{
+        outline: none;
+        border: none;
+        background-color: #F2F1F0;
+        
+        font-size: 25px;
+    }
+    .back,.backs{
+        display: none;
+    }
+    .icons{z-index: 9999999;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 20px;
+        margin-left: 1820px;
+        margin-top: 200px;
+    }
+    .ai{
+       
+        color: black;
+    }
+    @media screen and (max-width:600px){
+       .back{
+          display: inline;
+         margin-right: 140px;
+      } 
+      .backs{
+        display: flex;
+       
+      }
+      .backi{
+        display: inline; 
+      }
+      
+      .counteri{
+          display: none;
+      }
+      .parent{
+          max-width: 400px;
+          width: 100%;
+          height: 800px;;
+
+      }
+      .parent0{
+      display: none;
+      }
+      .parent01{
+        max-width: 400px;
+        width: 100%;
+      }
+      .child{
+        max-width: 400px;
+        width: 100%;
+          display: flex;
+          flex-direction: column;
+          height: 860px;
+          padding: 0px;
+      }
+      img{
+          width: 300px;
+         height: 180px;
+          padding-left: 80px;
+         margin-top: 0px;
+      }
+      .child2{
+         padding-top: 0px;
+
+          padding-left: 70px;
+      }
+      .child1{
+          padding-top: 0px;
+          height: 200px;
+          display: flex;
+         justify-content: start;
+      }
+    }

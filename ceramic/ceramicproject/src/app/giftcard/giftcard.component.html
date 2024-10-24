@@ -1,0 +1,60 @@
+<div class="icons">
+  
+    <svg _ngcontent-ng-c3221207567="" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 197.7 166" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-2" style="height: 25px;"><path _ngcontent-ng-c3221207567="" d="M197.9 55.9L169.9 127.4 64.5 127.4 27.6 29.8 0 29.8 0.2 16.7 36.5 16.7 73.4 114.3 160.9 114.3 183 55.9"></path><circle _ngcontent-ng-c3221207567="" cx="143.8" cy="153" r="13"></circle><circle _ngcontent-ng-c3221207567="" cx="90.8" cy="153" r="13"></circle><text _ngcontent-ng-c3221207567="" data-hook="items-count" text-anchor="middle" x="116" y="35" dy=".48em" class="uxskpx M846Y_">5</text></svg>
+  
+    <a class="ai" href="https://www.facebook.com/wix" target='blank'> <i class="fa-brands fa-facebook"></i></a>
+<a class="ai" href="https://www.instagram.com/wix/" target='blank'><i class="fa-brands fa-instagram" ></i></a>
+<a class="ai" href="https://www.pinterest.com/wixcom/" target='blank'><i class="fa-brands fa-twitter"></i></a></div>
+<div class="parent">
+  
+ <div class="parent01">
+   <div class="parent011">
+      <img width="451.99px;" height="315.99px;" src="https://static.wixstatic.com/media/84770f_1ad2498f7711478989684ab76ce6a8a8~mv2.jpg/v1/fit/w_484,h_338,q_80,usm_0.66_1.00_0.01,enc_auto/84770f_1ad2498f7711478989684ab76ce6a8a8~mv2.jpg" alt="">
+</div>
+</div>
+    <div class="parent2">
+<div class="gift">eGift Card</div>
+<input [placeholder]="price"  class="input0" value="">
+
+<div>
+  <h4>You can't go wrong with a gift</h4> <h4>card. Choose an amount and</h4>
+  <h4>write a personalized message to make this gift your own.</h4>
+</div>
+ <br>
+<div class="container">
+  <button (click)="printindex(i)" *ngFor='let price of prices let i=index'>{{price}}</button>
+</div><br>
+<h5>Quantity</h5><br>
+<div class="calculate3">
+   <button *ngIf="calculate==0"  class="button2"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="spMk0AF"><path fill-rule="evenodd" d="M20,12 L20,13 L5,13 L5,12 L20,12 Z"></path></svg></button>
+  <button *ngIf="calculate>0" (click)="minus1()" class="button1"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="spMk0AF"><path fill-rule="evenodd" d="M20,12 L20,13 L5,13 L5,12 L20,12 Z"></path></svg></button>
+  <input  class="input1"  [placeholder]="calculate">
+  <button (click)="plus()" class="button1"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="spMk0AF"><path fill-rule="evenodd" d="M13,5 L13,12 L20,12 L20,13 L13,13 L13,20 L12,20 L11.999,13 L5,13 L5,12 L12,12 L12,5 L13,5 Z"></path></svg></button>
+</div><br>
+<p>Who's the gift card for?</p>
+<br>
+<div class="inputebi">
+  <input  (click)='open()' class="i123" type="text" placeholder="For sameone else">
+  <input  (click)='close()' class="i123" type="text" placeholder="For myself">
+    </div>
+  <div *ngIf='logic' class="child0">
+   <label for="">Recipient email *</label><br>
+   <input class="i1234"  type="text">
+  
+    <label for="">Recipient email </label><br>
+   <input class="i1234" type="text"> 
+    <label for="">Delivery date</label><br>
+   <input class="i1234" type="date">
+   <label for="">Message</label><br>
+   <input class="i12345" type="textarea"> <br>
+   
+   
+
+  </div><br>
+  <button class="i12">Buy now</button>
+</div>
+
+
+
+    </div>
+

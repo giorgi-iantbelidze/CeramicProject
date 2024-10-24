@@ -1,0 +1,63 @@
+
+
+<div class="icons">
+  
+        <svg _ngcontent-ng-c3221207567="" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 197.7 166" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-2" style="height: 25px;"><path _ngcontent-ng-c3221207567="" d="M197.9 55.9L169.9 127.4 64.5 127.4 27.6 29.8 0 29.8 0.2 16.7 36.5 16.7 73.4 114.3 160.9 114.3 183 55.9"></path><circle _ngcontent-ng-c3221207567="" cx="143.8" cy="153" r="13"></circle><circle _ngcontent-ng-c3221207567="" cx="90.8" cy="153" r="13"></circle><text _ngcontent-ng-c3221207567="" data-hook="items-count" text-anchor="middle" x="116" y="35" dy=".48em" class="uxskpx M846Y_">5</text></svg>
+      
+        <a class="ai" href="https://www.facebook.com/wix" target='blank'> <i class="fa-brands fa-facebook"></i></a>
+    <a class="ai" href="https://www.instagram.com/wix/" target='blank'><i class="fa-brands fa-instagram" ></i></a>
+    <a class="ai" href="https://www.pinterest.com/wixcom/" target='blank'><i class="fa-brands fa-twitter"></i></a></div>
+<div class="parent">
+     
+     <div class="backs">
+    <svg class="backi" viewBox="0 0 15 24" fill="currentColor" width="15" height="24" class=""><g id="Left-Arrow" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd"><g id="Icons-/-Arrow-/-Right-/-Default" transform="translate(-9)" fill="currentColor"><path id="Fill-1" transform="matrix(0 1 1 0 0 0)" d="M11.9994992 9L6 14.2409396 6.65704031 15 11.9994992 10.3338926 17.3429597 15 18 14.2409396z"></path></g></g></svg>
+    <p class="back" routerLink='/'>Back to Home</p>
+</div> 
+    <div class="child">
+            <div class="parent0">
+                    <div class="parent01">
+                            <!-- <div>Home / I'm a product</div> -->
+                            <div class="counteri"> 
+                                    <svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path fill="currentColor" d="M11.519 13.934c0.214 0.217 0.214 0.566 0 0.783s-0.561 0.217-0.775 0l-6.264-6.326c-0.214-0.217-0.214-0.567 0-0.783l6.264-6.326c0.214-0.217 0.561-0.217 0.775 0s0.214 0.566 0 0.783l-5.712 5.934 5.712 5.934z"></path></svg>
+                                <button class="btn" *ngIf='counter>0' (click)="pre()">prev</button>
+                                <button class="btn" *ngIf='counter==0' >prev</button>
+                                <button class="btn" *ngIf='l' (click)="next()">next</button>
+                                <button class="btn" *ngIf='counter==9' >next</button>
+                                <svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path fill="currentColor" d="M4.48 13.934c-0.214 0.217-0.214 0.566 0 0.783s0.561 0.217 0.775 0l6.264-6.326c0.214-0.217 0.214-0.567 0-0.783l-6.264-6.326c-0.214-0.217-0.561-0.217-0.775 0s-0.214 0.566 0 0.783l5.712 5.934-5.712 5.934z"></path></svg>
+                            </div>
+                        </div>
+                        
+            </div> 
+            <!-- <div class="backs">
+                    <svg class="backi" viewBox="0 0 15 24" fill="currentColor" width="15" height="24" class=""><g id="Left-Arrow" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd"><g id="Icons-/-Arrow-/-Right-/-Default" transform="translate(-9)" fill="currentColor"><path id="Fill-1" transform="matrix(0 1 1 0 0 0)" d="M11.9994992 9L6 14.2409396 6.65704031 15 11.9994992 10.3338926 17.3429597 15 18 14.2409396z"></path></g></g></svg>
+                    <p class="back" routerLink='/'>Back to Home</p> -->
+                
+            <div class="child1">
+                    <img *ngIf='counter==0' [src]="newcard.imgurl" alt="surati">    
+                    <img  *ngIf='counter'  [src]="array[counter].imgurl" alt="">
+                
+                </div>
+                <div class="child2">
+                <h1>I'm a product</h1>
+                <p  *ngIf='counter==0'>SKU: {{newcard.SKU}}</p>
+                <p *ngIf='counter'>SKU: {{array[counter].SKU}} </p>
+                <label style="font-size: 25px;" for="">$</label>
+                <input class="i12" *ngIf='counter==0' type="text" [placeholder]="newcard.price">
+                <input class="i12" *ngIf='counter' type="text" [placeholder]="array[counter].price" > 
+                <br><br>
+                <div>
+           
+                <p>I'm a product description. I'm a great <br> place to add more details about your <br> product such as sizing, material, carebr
+                 <br>    Read more </p> 
+            </div>
+            <p>Quantity</p>
+            <input style="padding-left: 20px;" type="number" placeholder="1"><br><br>
+            <div class="buttons">
+               <button class="addtocard">Add to Card</button>
+               <button class="svg" ><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="PUGOL6 yaZHMq" data-hook="wishlist-button-icon"><path fill-rule="evenodd" d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"></path></svg></button>
+            </div><br>
+            <button class="buynow">Buy Now</button>
+                </div>
+           
+  </div>
+</div>

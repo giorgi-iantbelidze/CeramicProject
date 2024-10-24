@@ -1,0 +1,23 @@
+<div class="icons">
+  
+    <svg _ngcontent-ng-c3221207567="" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 197.7 166" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-2" style="height: 25px;"><path _ngcontent-ng-c3221207567="" d="M197.9 55.9L169.9 127.4 64.5 127.4 27.6 29.8 0 29.8 0.2 16.7 36.5 16.7 73.4 114.3 160.9 114.3 183 55.9"></path><circle _ngcontent-ng-c3221207567="" cx="143.8" cy="153" r="13"></circle><circle _ngcontent-ng-c3221207567="" cx="90.8" cy="153" r="13"></circle><text _ngcontent-ng-c3221207567="" data-hook="items-count" text-anchor="middle" x="116" y="35" dy=".48em" class="uxskpx M846Y_">5</text></svg>
+  
+    <a class="ai" href="https://www.facebook.com/wix" target='blank'> <i class="fa-brands fa-facebook"></i></a>
+<a class="ai" href="https://www.instagram.com/wix/" target='blank'><i class="fa-brands fa-instagram" ></i></a>
+<a class="ai" href="https://www.pinterest.com/wixcom/" target='blank'><i class="fa-brands fa-twitter"></i></a></div>
+<div class="parents">
+<div class="parent0">
+    <div *ngFor="let card of array1 " class="child1">
+      <div  class="child0">
+        <a ><img class="imgurl" src="{{card.imgurl}}" alt=""></a>
+      </div>
+      <div class="add">
+        <div class="info">
+        <div class="info1"><p>{{card.name}}</p></div>
+        <div class="info1">${{card.price}}</div>
+      </div>
+      <div class="div1"><button (click)="seeinfo(card)" class="button"><span>Add to Card</span></button></div>
+      </div>
+    </div>
+  </div>
+</div>

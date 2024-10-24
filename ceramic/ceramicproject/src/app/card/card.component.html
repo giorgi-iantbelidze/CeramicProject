@@ -1,0 +1,54 @@
+
+
+
+  <div class="parent0">
+      <div *ngIf='it'  class="cardi">
+          <div class="header">
+              <div (click)="close()" class="box2"><i class="fa-solid fa-greater-than"></i></div>
+              <div class="box1">Cart</div>
+             </div>
+             <div class="box4">
+                <div *ngFor='let user of userlist1 let i= index' class="box3">
+                  <div class="imgurl1"> <img width="90px" src="{{user.in}}" alt=""> 
+                  </div>
+                  <div class="product">
+                    <p>I'm a product</p>
+                    <h5>${{user.price}}</h5>
+                    <div class="calculate3">
+                        <button *ngIf="calculate==0"  class="button3"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="spMk0AF"><path fill-rule="evenodd" d="M20,12 L20,13 L5,13 L5,12 L20,12 Z"></path></svg></button>
+                       <button *ngIf="calculate>0" (click)="minus1()" class="button1"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="spMk0AF"><path fill-rule="evenodd" d="M20,12 L20,13 L5,13 L5,12 L20,12 Z"></path></svg></button>
+                       <input  class="input1"  [value]="mass[i]" >
+                       <button (click)="plus(i)" class="button1"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="spMk0AF"><path fill-rule="evenodd" d="M13,5 L13,12 L20,12 L20,13 L13,13 L13,20 L12,20 L11.999,13 L5,13 L5,12 L12,12 L12,5 L13,5 Z"></path></svg></button>
+                     </div>
+               
+                  </div>
+                  <div  class="buttonfordiv">
+                  <button (click)='delete(i)'  class="delete" ><i class="fa-solid fa-xmark"></i></button>
+                </div>
+              
+                </div>
+                <div class="subtotal">
+                  <h1>Subtotal</h1>
+                  <h1>${{subtotal}}</h1>
+                </div>
+              </div>
+              <div class="viewcard">
+       
+          
+                  <button class="button2">View Card</button>
+               
+              </div>
+      </div>
+    <div  *ngFor="let card of array  let i=index " class="child1">
+      <div (click)="seeinfo(card)" class="child0">
+        <a ><img class="imgurl" src="{{card.imgurl}}" alt=""></a>
+      </div>
+      <div class="add">
+        <div (click)="seeinfo(card)"  class="info">
+        <div class="info1"><p>{{card.name}}</p></div>
+        <div class="info1">${{card.price}}</div>
+      </div>
+      <div class="div1"><button  (click)="showindex(i)"   class="button"><span>Add to Card</span></button></div>
+      </div>
+    </div>
+</div>
